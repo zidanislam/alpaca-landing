@@ -9,15 +9,15 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="hero py-5 md:py-7">
+      <div className="hero py-5 md:py-7 lg:h-screen">
         <div className="hero-content flex-col md:flex-row-reverse md:pr-0 md:gap-10 xl:pr-0 2xl:pr-0  lg:flex-row-reverse">
-          <img src={hero} className="w-96 shadow-2xl md:w-80 lg:w-96 sm:max-w-sm" alt="hero" />
-          <div className="py-3  md:pl-20 lg:pl-32">
-            <h1 className="text-xl font-medium py-0 mb-2">
+          <img src={hero} className="w-96 shadow-2xl md:w-80 lg:w-2/4 lg:-mr-8" alt="hero" />
+          <div className="py-3  md:pl-20 lg:pl-32 space-y-5">
+            <h1 className="text-xl font-medium py-0 mb-2 lg:text-4xl">
               Wandelen met alpaca is een unieke belevenis.
             </h1>
             <hr className="hero-devider bg m-0 w-48" />
-            <p className="text-xs py-5">
+            <p className="text-xs py-5 lg:text-xl lg:font-base">
               En neen, je hoeft er niet voor naar het Andes-gebergte want vanuit
               Sanapolis in Sijsele-Damme kan je genieten van deze uitzonderlijke
               ervaring. Alpaca’s zijn bijzonder gevoelige én intelligente
@@ -56,26 +56,26 @@ const Home = () => {
       <Pricing></Pricing>
       {/* End of Pricing */}
       {/* Dining Section */}
-      <div className="hero section py-10">
+      <div className="hero section py-10 lg:h-screen">
         <div className="flex-col md:flex-row-reverse md:flex md:gap-10 lg:flex-row-reverse">
           <div className="flex gap-5 justify-center md:justify-end md:items-center md:mr-5 lg:mr-28 lg:ml-24">
           <img src={dinner} className="shadow-2xl w-32 md:w-48 lg:w-72 md:h-40 lg:h-64" alt="hero" />
-          <img src={cake} className="shadow-2xl w-32 md:w-52 lg:w-80 md:h-64 lg:h-72" alt="hero" />
+          <img src={cake} className="shadow-2xl w-32 md:w-52 lg:w-full md:h-64 lg:h-72" alt="hero" />
           </div>
-          <div className="p-5 py-7 md:px-24 lg:pl-36">
-            <h1 className="text-3xl leading-none">
+          <div className="space-y-7 p-5 py-7 md:px-24 lg:pl-44">
+            <h1 className="text-3xl leading-none lg:text-7xl">
               Vertrek <span className="sub">&</span> aankomst
             </h1>
-            <p className="py-4 text-1xl font-bold sub">
+            <p className="text-1xl font-bold sub lg:text-xl">
               Gezellig, rustig en eerlijk
             </p>
-            <p className="py-2">
+            <p>
               Bij elk van deze wandelingen is ons vertrek- en eindpunt
               <b> Brasserie-Feestzaal ‘t-Oud-Sanatorium</b> gelegen op ons
               domein
               <b>Sanapolis</b>.
             </p>
-            <p className="py-2">
+            <p>
               In deze gezellige brasserie met kinderboerderij kan je na de
               wandeling heerlijk culinair nagenieten. En je kan er ons
               huisgebrouwen Sanapolis-streekbier proeven.
